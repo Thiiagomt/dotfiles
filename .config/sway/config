@@ -1,0 +1,245 @@
+# Laptop keyboard
+input "2:14:ETPS/2_Elantech_Touchpad" {
+	tap enabled
+	natural_scroll enabled
+}
+input "1:1:AT_Translated_Set_2_keyboard" {
+	xkb_layout br
+	xkb_variant abnt2
+}
+
+# Default displays
+output eDP-1 res 1920x1080 
+set $center eDP-1
+
+# start locked
+#set $lock /home/pedrohlc/.local/bin/my-wscreensaver
+#exec $lock
+
+# lock after 30 min idle
+#exec swayidle \
+#	timeout 30 '$scrsv' \
+#	before-sleep '$lock'
+
+# Mouse follows and follows mouse
+focus_follows_mouse yes
+mouse_warping container
+
+# Minimum Settings
+set $mod Mod4
+set $editor subl
+set $menu bemenu-run --fn $uifont -b -p "▶" --tf "$prompt" --hf "$highlight" --sf "$highlight" --scf "$highlight" | xargs swaymsg exec
+
+# Display keys
+font pango:monospace 8
+font pango:Cantarell 14px
+font pango:Fira Sans Mono 8
+floating_modifier $mod
+
+# Per display workspace
+workspace 1 output $left
+workspace 2 output $right
+workspace 3 output $left
+workspace 4 output $right
+workspace 5 output $left
+workspace 6 output $right
+workspace 7 output $bottom
+workspace 8 output $bottom
+workspace 9 output $bottom
+workspace 10 output $bottom
+workspace C1 output $left
+workspace C2 output $right
+workspace C3 output $left
+workspace C4 output $right
+workspace C5 output $left
+workspace C6 output $right
+workspace C7 output $bottom
+workspace C8 output $bottom
+workspace C9 output $bottom
+workspace C10 output $bottom
+
+# Specific keybinds
+bindsym $mod+b exec firefox
+bindsym $mod+s exec spotify
+
+# Pretty much i3 keybinds with small adjusted
+bindsym $mod+Return exec alacritty
+bindsym $mod+Shift+q kill
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+d exec $menu
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+bindsym $mod+u split h
+bindsym $mod+i split v
+bindsym $mod+f fullscreen toggle
+#bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+bindsym $mod+Ctrl+1 workspace C1
+bindsym $mod+Ctrl+2 workspace C2
+bindsym $mod+Ctrl+3 workspace C3
+bindsym $mod+Ctrl+4 workspace C4
+bindsym $mod+Ctrl+5 workspace C5
+bindsym $mod+Ctrl+6 workspace C6
+bindsym $mod+Ctrl+7 workspace C7
+bindsym $mod+Ctrl+8 workspace C8
+bindsym $mod+Ctrl+9 workspace C9
+bindsym $mod+Ctrl+0 workspace C10
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+Ctrl+1 move container to workspace C1
+bindsym $mod+Shift+Ctrl+2 move container to workspace C2
+bindsym $mod+Shift+Ctrl+3 move container to workspace C3
+bindsym $mod+Shift+Ctrl+4 move container to workspace C4
+bindsym $mod+Shift+Ctrl+5 move container to workspace C5
+bindsym $mod+Shift+Ctrl+6 move container to workspace C6
+bindsym $mod+Shift+Ctrl+7 move container to workspace C7
+bindsym $mod+Shift+Ctrl+8 move container to workspace C8
+bindsym $mod+Shift+Ctrl+9 move container to workspace C9
+bindsym $mod+Shift+Ctrl+0 move container to workspace C10
+bindsym $mod+Shift+c restart
+bindsym $mod+Shift+r reload
+bindsym $mod+Shift+t sticky toggle
+
+mode "resize" {
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
+    
+	bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Lower bar
+bar {
+	swaybar_command waybar
+}
+
+# Laptop keybings
+bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 0 -5%
+bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 0 +5%
+bindsym XF86AudioMute exec /usr/bin/pactl set-sink-mute 0 toggle
+bindsym XF86MonBrightnessUp exec intelbacklight -inc 10
+bindsym $mod+XF86MonBrightnessUp output * dpms on
+bindsym XF86MonBrightnessDown exec intelbacklight -dec 10
+bindsym $mod+XF86MonBrightnessDown output * dpms off
+bindsym XF86WLAN exec $TERMINAL nmtui; mode "default"
+bindsym Print exec grim -t png - | tee /tmp/screenshot.png | wl-copy
+bindsym Shift+Print exec grim -t png -g "$(slurp)" - | tee /tmp/screenshot.png | wl-copy
+#bindsym Print exec grim -t png -o eDP-1 - | tee /tmp/screenshot.png | wl-copy
+
+# window settings
+default_border pixel 1
+hide_edge_borders both
+
+# Per app window settings
+for_window [app_id="firefox" title="moz-extension:.*"] floating enable
+for_window [app_id="firefox" title="Password Required"] floating enable
+for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; sticky enable
+for_window [app_id="firefox" title="Firefox - Sharing Indicator"] floating enable; sticky enable
+
+for_window [title="WScreenSaver@Global"] fullscreen enable global; sticky enable
+for_window [title="WScreenSaver@eDP-1"] move container to output "eDP-1"; fullscreen enable; sticky enable
+for_window [title="WScreenSaver@HDMI-A-1"] move container to output "HDMI-A-1"; fullscreen enable; sticky enable
+for_window [title="WScreenSaver@DP-1"] move container to output "DP-1"; fullscreen enable; sticky enable
+
+# Proper options for poweroff
+set $mode_power [L]ogoff | [S]hutdown | [R]eboot | [l]ock | [s]uspend | [r]eload
+mode "$mode_power" {
+    bindsym Shift+l exec swaymsg exit
+    bindsym Shift+s exec systemctl poweroff
+    bindsym Shift+r exec systemctl reboot
+    bindsym s exec systemctl suspend & $lock ; mode default
+    bindsym l exec $lock ; mode default
+    bindsym r exec swaymsg reload
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Shift+e mode "$mode_power"
+
+# LIMIT APPS MEMORY!!!!!
+#set $usefull_sideapp systemd-run --user --scope -p 
+#set $usefull_chrome $usefull_sideapp MemoryLimit=500M nowl google-chrome-stable
+#set $usefull_firefox $usefull_sideapp MemoryLimit=2G firefox
+#set $usefull_spotify $usefull_sideapp MemoryLimit=250M spotify
+#set $usefull_telegram $usefull_sideapp MemoryLimit=250M telegram-desktop
+#set $usefull_editor $usefull_sideapp MemoryLimit=500M $editor
+
+# A fast launcher
+set $mode_favs [f]irefox | [F]ileMgr | [v]olume | q[b]ittorrent | [T]elegram | [e]ditor | [S]potify
+mode "$mode_favs" {
+    bindsym f exec $usefull_firefox; mode "default"
+    bindsym Shift+f exec pcmanfm-qt; mode "default"
+    bindsym v exec pavucontrol; mode "default"
+    bindsym b exec qbittorrent; mode "default"
+    bindsym e exec $usefull_editor; mode "default"
+    bindsym shift+o exec nowl obs; mode "default"
+    bindsym shift+c exec $usefull_chrome; mode "default"
+    bindsym Shift+s exec ((pidof spotify) || $usefull_spotify); mode "default"
+    bindsym Shift+t exec $usefull_telegram; mode "default"
+    bindsym Ctrl+Escape exec $usefull_editor ~/.config/sway/config; mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+Tab mode "$mode_favs"
+
+# Notifications daemon
+#exec mako --output eDP-1
+
+# Screen sharing
+#exec xdg-desktop-portal-wlr -p BGRx
+
+# Wallpaper
+output '*' background /home/thiago/.wallpaper.png fill
+#output 'HDMI-A-1' background /home/pedrohlc/.wallpaper.HDMI-A-1.jpg fill
+#output 'DP-1' background /home/pedrohlc/.wallpaper.DP-1.jpg fill
+#output 'eDP-1' background /home/pedrohlc/.wallpaper.eDP-1.jpg fill
+
+# GNOME Theme
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Breeze-Dark'
+    gsettings set $gnome-schema icon-theme 'Vimix-Doder-dark'
+    gsettings set $gnome-schema cursor-theme 'Breeze_Snow'
+}
+
+# Some transparencies
+for_window [class="Spotify"] opacity 0.9
