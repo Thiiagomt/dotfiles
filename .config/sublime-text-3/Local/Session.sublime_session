@@ -250,7 +250,7 @@
 			],
 			"find":
 			{
-				"height": 39.0
+				"height": 25.0
 			},
 			"find_in_files":
 			{
@@ -286,7 +286,7 @@
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 1,
 					"sheets":
 					[
 						{
@@ -316,7 +316,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 0,
+							"stack_index": 1,
 							"type": "text"
 						},
 						{
@@ -332,8 +332,8 @@
 								"selection":
 								[
 									[
-										431,
-										431
+										370,
+										370
 									]
 								],
 								"settings":
@@ -344,7 +344,7 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
-							"stack_index": 1,
+							"stack_index": 0,
 							"type": "text"
 						}
 					]

@@ -183,14 +183,13 @@ for_window [title="WScreenSaver@HDMI-A-1"] move container to output "HDMI-A-1"; 
 for_window [title="WScreenSaver@DP-1"] move container to output "DP-1"; fullscreen enable; sticky enable
 
 # Proper options for poweroff
-set $mode_power [L]ogoff | [S]hutdown | [R]eboot | [l]ock | [s]uspend | [r]eload
+set $mode_power [L]ogoff | [S]hutdown | [R]eboot | [l]ock | [s]uspend 
 mode "$mode_power" {
     bindsym Shift+l exec swaymsg exit
     bindsym Shift+s exec systemctl poweroff
     bindsym Shift+r exec systemctl reboot
     bindsym s exec systemctl suspend & $lock ; mode default
     bindsym l exec $lock ; mode default
-    bindsym r exec swaymsg reload
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }

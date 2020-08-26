@@ -9,7 +9,7 @@ dnacdn.net:HSTS	1	18499	1629919630296,1,0,2
 snippets.cdn.mozilla.net:HSTS	0	18498	1629846056521,1,0,2
 api.accounts.firefox.com:HSTS	2	18500	1630001806987,1,1,2
 settings.crisp.chat:HSTS	0	18498	1629846875067,1,1,2
-www.google-analytics.com:HSTS	2	18500	1609351835901,1,1,2
+www.google-analytics.com:HSTS	2	18500	1609352821916,1,1,2
 mail.google.com:HSTS	2	18500	1609348430195,1,1,2
 signaler-pa.clients6.google.com:HSTS	1	18499	1609265265795,1,1,2
 customer.api.drift.com:HSTS	0	18500	1629998506615,1,1,2
@@ -28,7 +28,7 @@ public-api.wordpress.com:HSTS	0	18498	1613862862948,1,0,2
 framagit.org:HSTS	0	18499	1629917708274,1,1,2
 spclient.wg.spotify.com:HSTS	0	18499	1629916903115,1,0,2
 ostechnix.com:HSTS	0	18500	1661534343568,1,1,2
-www.google.com^firstPartyDomain=google-b-d.search.suggestions.mozilla:HSTS	2	18500	1630002416473,1,0,2
+www.google.com^firstPartyDomain=google-b-d.search.suggestions.mozilla:HSTS	2	18500	1630002761862,1,0,2
 assets.privy.com:HSTS	0	18500	1629998505512,1,1,2
 hangouts.google.com:HSTS	2	18500	1629998033511,1,1,2
 gitlab.com:HSTS	0	18499	1629863638037,1,0,2
@@ -43,7 +43,7 @@ ord-v4.pops.fastly-insights.com:HSTS	0	18499	1598467303431,1,1,2
 firefox.settings.services.mozilla.com:HSTS	2	18500	1630000131894,1,0,2
 readthedocs.org:HSTS	0	18499	1629911161671,1,0,2
 spotify.demdex.net:HSTS	0	18499	1629916902238,1,1,2
-www.googletagmanager.com:HSTS	2	18500	1630002347153,1,1,2
+www.googletagmanager.com:HSTS	2	18500	1630002421760,1,1,2
 services.addons.mozilla.org:HSTS	1	18500	1629997439293,1,0,2
 cdn.streamelements.com:HSTS	0	18498	1613864855117,1,0,2
 unix.stackexchange.com:HSTS	1	18500	1601025807916,1,0,2
@@ -67,7 +67,7 @@ www.fastly-insights.com:HSTS	0	18499	1598467306628,1,1,2
 924-img.c3tag.com:HSTS	0	18499	1629919626156,1,1,2
 ghbtns.com:HSTS	0	18499	1629851059024,1,1,2
 c.aaxads.com:HSTS	2	18500	1599067470690,1,0,2
-incoming.telemetry.mozilla.org:HSTS	2	18500	1614234378601,1,0,2
+incoming.telemetry.mozilla.org:HSTS	2	18500	1614234764387,1,0,2
 scl-v4.pops.fastly-insights.com:HSTS	0	18499	1598467298792,1,1,2
 api-partner.spotify.com:HSTS	0	18499	1629916906458,1,0,2
 remote-auth-gateway.discord.gg:HSTS	0	18498	1613862895580,1,1,2
@@ -76,6 +76,7 @@ tlweblibs.translink.ca:HSTS	0	18500	1629975201737,1,0,2
 status.discord.com:HSTS	0	18498	1629846911644,1,1,2
 privacyportal-eu.onetrust.com:HSTS	0	18499	1629862722921,1,1,2
 giphy.com:HSTS	0	18500	1598550588412,1,0,2
+git-scm.com:HSTS	0	18500	1630002475397,1,0,2
 docs.fedoraproject.org:HSTS	0	18499	1629850565183,1,1,2
 passport.twitch.tv:HSTS	0	18498	1598485467235,1,1,2
 polyfill.twitchsvc.net:HSTS	1	18500	1629969626723,1,1,2
@@ -89,7 +90,7 @@ snapcraft.io:HSTS	2	18500	1614141036380,1,0,2
 aur.archlinux.org:HSTS	0	18500	1629999342404,1,1,2
 cdn.cookielaw.org:HSTS	1	18500	1629998497989,1,1,2
 intersc.igaming-service.io:HSTS	0	18498	1614079071351,1,0,2
-avatars1.githubusercontent.com:HSTS	2	18500	1630023979488,1,0,2
+avatars1.githubusercontent.com:HSTS	2	18500	1630024569081,1,0,2
 support.microsoft.com:HSTS	0	18498	1598397149152,1,1,2
 eze-v4.pops.fastly-insights.com:HSTS	0	18499	1598467305968,1,1,2
 polyfill.io:HSTS	0	18500	1629998396430,1,1,2
@@ -97,8 +98,8 @@ polyfill.io:HSTS	0	18500	1629998396430,1,1,2
 plus.diolinux.com.br:HSTS	0	18499	1629911298751,1,0,2
 cdn.speedcurve.com:HSTS	0	18500	1614231096870,1,0,2
 siteintercept.qualtrics.com:HSTS	0	18500	1629998504577,1,1,2
-api.github.com:HSTS	2	18500	1630002347504,1,1,2
-github.com:HSTS	2	18500	1630002379451,1,1,2
+api.github.com:HSTS	2	18500	1630002974723,1,1,2
+github.com:HSTS	2	18500	1630002975114,1,1,2
 az1.qualtrics.com:HSTS	0	18500	1629998504313,1,1,2
 media3.giphy.com:HSTS	0	18500	1598550590531,1,0,2
 www.flaticon.com:HSTS	0	18499	1629919124557,1,1,2
@@ -134,9 +135,9 @@ gateway.reddit.com:HSTS	2	18500	1629999340182,1,1,2
 scone-pa.clients6.google.com:HSTS	0	18500	1609348727023,1,1,2
 fontawesome.com:HSTS	0	18499	1629918983100,1,1,2
 js.driftt.com:HSTS	0	18500	1629998505788,1,1,2
-alive.github.com:HSTS	1	18500	1630001812633,1,0,2
+alive.github.com:HSTS	1	18500	1630002969708,1,0,2
 bwi-v4.pops.fastly-insights.com:HSTS	0	18499	1598467298395,1,1,2
-raw.githubusercontent.com:HSTS	1	18500	1630002382913,1,0,2
+raw.githubusercontent.com:HSTS	1	18500	1630002539165,1,0,2
 d3hb14vkzrxvla.cloudfront.net:HSTS	0	18499	1629918986174,1,1,2
 facebook.com:HSTS	0	18498	1613862851892,1,1,2
 image.crisp.chat:HSTS	0	18498	1629846882298,1,1,2
@@ -151,7 +152,7 @@ draculatheme.com:HSTS	0	18500	1661538350834,1,0,2
 mozilla.org:HSTS	1	18500	1629846044666,1,0,2
 server.ethicalads.io:HSTS	0	18499	1629911163460,1,1,2
 apis.google.com:HSTS	2	18500	1630000139253,1,0,2
-wiki.archlinux.org:HSTS	2	18500	1629999950212,1,1,2
+wiki.archlinux.org:HSTS	2	18500	1630002767792,1,1,2
 www.mankier.com:HSTS	0	18499	1629912584164,1,1,2
 ip2.i.lithium.com:HSTS	0	18499	1629916903270,1,1,2
 support.apple.com:HSTS	0	18500	1629998455333,1,1,2
@@ -166,11 +167,11 @@ aus5.mozilla.org:HSTS	1	18500	1629968908399,1,0,2
 fonts.googleapis.com:HSTS	2	18500	1629998762845,1,0,2
 sentry.io:HSTS	0	18499	1629910926017,1,1,2
 ag.gbc.criteo.com:HSTS	1	18499	1629919629979,1,0,2
-shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	2	18500	1629999160557,1,1,2
+shavar.services.mozilla.com^firstPartyDomain=safebrowsing.86868755-6b82-4842-b301-72671a0db32e.mozilla:HSTS	2	18500	1630002760946,1,1,2
 r.skimresources.com:HSTS	0	18498	1629846877000,1,0,2
 gateway.discord.gg:HSTS	0	18498	1613862910127,1,1,2
 login.aliexpress.com:HSTS	0	18498	1629847107392,1,0,2
-www.google.com:HSTS	2	18500	1630002346487,1,0,2
+www.google.com:HSTS	2	18500	1630002766972,1,0,2
 zn3bhfdulj7vtgut3-monotype.siteintercept.qualtrics.com:HSTS	0	18500	1629998503131,1,1,2
 geolocation.onetrust.com:HSTS	1	18500	1629998498186,1,1,2
 www.jetbrains.com:HSTS	0	18500	1629998430209,1,0,2
@@ -180,7 +181,7 @@ ui.clevernt.com:HSTS	0	18498	1614078712701,1,0,2
 m.stripe.network:HSTS	0	18499	1629939863334,1,1,2
 gumroad.com:HSTS	0	18500	1629993122998,1,0,2
 discord.com:HSTS	2	18500	1629847053196,1,1,2
-collector.githubapp.com:HSTS	2	18500	2229604666027,1,0,2
+collector.githubapp.com:HSTS	2	18500	2229605493700,1,0,2
 www.netflix.com:HSTS	0	18498	1629846867597,1,0,2
 discordapp.com:HSTS	0	18498	1629847053062,1,1,2
 chat-pa.clients6.google.com:HSTS	2	18500	1609348432798,1,1,2
@@ -207,7 +208,7 @@ superuser.com:HSTS	0	18499	1600906525162,1,0,2
 use.typekit.net:HSTS	1	18500	1629969301264,1,1,2
 client.crisp.chat:HSTS	0	18498	1629846882125,1,1,2
 fedoraproject.org:HSTS	0	18499	1629850565763,1,1,2
-avatars2.githubusercontent.com:HSTS	2	18500	1630023980010,1,0,2
+avatars2.githubusercontent.com:HSTS	2	18500	1630024128715,1,0,2
 bugs.debian.org:HSTS	0	18499	1613927300753,1,0,2
 stackoverflow.com:HSTS	0	18500	1601058162664,1,0,2
 drive.google.com:HSTS	2	18500	1629913831271,1,1,2
@@ -234,7 +235,7 @@ m.stripe.com:HSTS	0	18499	1629939910170,1,1,2
 api.spotify.com:HSTS	0	18499	1629916902801,1,0,2
 mem.gfx.ms:HSTS	0	18498	1629846749884,1,1,2
 cdn-ukwest.onetrust.com:HSTS	0	18499	1629918989368,1,1,2
-profile.accounts.firefox.com:HSTS	2	18500	1630001806979,1,1,2
+profile.accounts.firefox.com:HSTS	2	18500	1630002515634,1,1,2
 analytics.twitter.com:HSTS	1	18500	2229604867333,1,0,2
 media.flaticon.com:HSTS	0	18499	1629918990888,1,1,2
 allanlima.wordpress.com:HSTS	2	18500	1613862858017,1,0,2
