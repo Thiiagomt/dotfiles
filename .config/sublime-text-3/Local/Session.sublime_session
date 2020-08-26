@@ -4,7 +4,7 @@
 		"/home/thiago/.config/waybar/modules"
 	],
 	"last_version": 3211,
-	"last_window_id": 2,
+	"last_window_id": 3,
 	"log_indexing": false,
 	"settings":
 	{
@@ -48,12 +48,21 @@
 			},
 			"file_history":
 			[
-				"/home/thiago/.config/sway/config",
+				"/home/thiago/.config/fish/functions/fish_prompt.fish",
+				"/home/thiago/.config/fish/functions/fish_right_prompt.fish",
+				"/home/thiago/fish_prompt.fish",
+				"/home/thiago/.config/waybar/modules/mediaplayer.py",
 				"/home/thiago/.config/waybar/style.css",
+				"/home/thiago/.config/waybar/config",
+				"/home/thiago/.config/alacritty/alacritty.yml",
+				"/home/thiago/Downloads/alacritty-master/dracula.yml",
+				"/home/thiago/.config/fish/functions/bobthefish_colors.fish",
+				"/etc/ntp.conf",
+				"/home/thiago/.config/fish/functions/fish_promptt",
+				"/home/thiago/.config/sway/config",
 				"/home/thiago/.config/waybar/modules/storage.sh",
 				"/home/thiago/.config/waybar/mediaplayer.py",
 				"/home/thiago/.config/waybar/mediaplayer.sh",
-				"/home/thiago/.config/waybar/config",
 				"/home/thiago/.config/waybar/modules/weather.sh",
 				"/home/thiago/.config/waybar/modules/spotify.sh",
 				"/home/thiago/.config/waybar/modules/mail.py",
@@ -63,7 +72,7 @@
 			],
 			"find":
 			{
-				"height": 38.0
+				"height": 24.0
 			},
 			"find_in_files":
 			{
@@ -77,7 +86,9 @@
 				"case_sensitive": false,
 				"find_history":
 				[
-					"temperature"
+					"statusline",
+					"$menu",
+					"}\n"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -94,7 +105,7 @@
 			},
 			"incremental_find":
 			{
-				"height": 23.0
+				"height": 24.0
 			},
 			"input":
 			{
@@ -108,7 +119,7 @@
 			"pinned_build_system": "",
 			"replace":
 			{
-				"height": 42.0
+				"height": 44.0
 			},
 			"save_all_on_build": true,
 			"select_file":
@@ -162,29 +173,19 @@
 			"buffers":
 			[
 				{
-					"file": "/home/thiago/.config/waybar/modules/mediaplayer.py",
+					"file": "/home/thiago/.config/sway/config",
 					"settings":
 					{
-						"buffer_size": 3800,
+						"buffer_size": 8989,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/thiago/.config/waybar/config",
+					"file": "/home/thiago/Downloads/dotfiles/.config/sway/config",
 					"settings":
 					{
-						"buffer_size": 3553,
-						"encoding": "UTF-8",
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/home/thiago/.config/waybar/style.css",
-					"settings":
-					{
-						"buffer_size": 2330,
-						"encoding": "UTF-8",
+						"buffer_size": 8659,
 						"line_ending": "Unix"
 					}
 				}
@@ -221,12 +222,25 @@
 			},
 			"file_history":
 			[
+				"/home/thiago/Downloads/i3-master/.config/i3/config",
+				"/home/thiago/Downloads/dotfiles/Videos/my-wscreensaver.playlist.txt",
+				"/home/thiago/Videos/my-wscreensaver.playlist.txt",
+				"/home/thiago/Downloads/dotfiles/.config/wofi/config",
+				"/home/thiago/.config/fish/functions/fish_prompt.fish",
+				"/home/thiago/.config/fish/functions/fish_right_prompt.fish",
+				"/home/thiago/fish_prompt.fish",
+				"/home/thiago/.config/waybar/modules/mediaplayer.py",
 				"/home/thiago/.config/waybar/style.css",
+				"/home/thiago/.config/waybar/config",
+				"/home/thiago/.config/alacritty/alacritty.yml",
+				"/home/thiago/Downloads/alacritty-master/dracula.yml",
+				"/home/thiago/.config/fish/functions/bobthefish_colors.fish",
+				"/etc/ntp.conf",
+				"/home/thiago/.config/fish/functions/fish_promptt",
 				"/home/thiago/.config/sway/config",
 				"/home/thiago/.config/waybar/modules/storage.sh",
 				"/home/thiago/.config/waybar/mediaplayer.py",
 				"/home/thiago/.config/waybar/mediaplayer.sh",
-				"/home/thiago/.config/waybar/config",
 				"/home/thiago/.config/waybar/modules/weather.sh",
 				"/home/thiago/.config/waybar/modules/spotify.sh",
 				"/home/thiago/.config/waybar/modules/mail.py",
@@ -236,7 +250,7 @@
 			],
 			"find":
 			{
-				"height": 38.0
+				"height": 39.0
 			},
 			"find_in_files":
 			{
@@ -250,6 +264,11 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"idle",
+					"lock",
+					"statusline",
+					"$menu",
+					"}\n"
 				],
 				"highlight": true,
 				"in_selection": false,
@@ -267,54 +286,24 @@
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/home/thiago/.config/waybar/modules/mediaplayer.py",
+							"file": "/home/thiago/.config/sway/config",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 3800,
+								"buffer_size": 8989,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										1297,
-										1297
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Python/Python.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 2,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/thiago/.config/waybar/config",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 3553,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										1419,
-										1419
+										257,
+										257
 									]
 								],
 								"settings":
@@ -324,34 +313,32 @@
 									"translate_tabs_to_spaces": true
 								},
 								"translation.x": 0.0,
-								"translation.y": 364.0,
+								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
 							"stack_index": 0,
 							"type": "text"
 						},
 						{
-							"buffer": 2,
-							"file": "/home/thiago/.config/waybar/style.css",
+							"buffer": 1,
+							"file": "/home/thiago/Downloads/dotfiles/.config/sway/config",
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 2330,
+								"buffer_size": 8659,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										471,
-										471
+										431,
+										431
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/CSS/CSS.sublime-syntax",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
+									"syntax": "Packages/Text/Plain text.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -365,7 +352,7 @@
 			],
 			"incremental_find":
 			{
-				"height": 23.0
+				"height": 25.0
 			},
 			"input":
 			{
@@ -403,7 +390,7 @@
 			"project": "",
 			"replace":
 			{
-				"height": 42.0
+				"height": 46.0
 			},
 			"save_all_on_build": true,
 			"select_file":

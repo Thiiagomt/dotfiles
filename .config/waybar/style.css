@@ -2,12 +2,25 @@
     border: none;
     border-radius: 0;
     font-family: Roboto,'Font Awesome 5', 'SFNS Display',  Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     min-height: 0;
 }
 
+/* Dracula Colors Theme
+colors {
+    background #282A36
+    statusline #F8F8F2
+    separator  #44475A
+    focused_workspace  #44475A #44475A #F8F8F2
+    active_workspace   #282A36 #44475A #F8F8F2
+    inactive_workspace #282A36 #282A36 #BFBFBF
+    urgent_workspace   #FF5555 #FF5555 #F8F8F2
+    binding_mode       #FF5555 #FF5555 #F8F8F2
+}
+*/
+
 window#waybar {
-    background: rgba(43, 48, 59, 0.5);
+    background-color: #282A36;
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
 }
@@ -24,12 +37,12 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    background: #64727D;
+    background: #44475A;
     border-bottom: 3px solid #ffffff;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #FF5555;
 }
 
 #mode {

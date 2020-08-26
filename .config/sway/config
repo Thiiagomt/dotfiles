@@ -13,8 +13,8 @@ output eDP-1 res 1920x1080
 set $center eDP-1
 
 # start locked
-#set $lock /home/pedrohlc/.local/bin/my-wscreensaver
-#exec $lock
+set $lock /home/thiago/.local/bin/my-wscreensaver
+exec $lock
 
 # lock after 30 min idle
 #exec swayidle \
@@ -28,7 +28,7 @@ mouse_warping container
 # Minimum Settings
 set $mod Mod4
 set $editor subl
-set $menu bemenu-run --fn $uifont -b -p "▶" --tf "$prompt" --hf "$highlight" --sf "$highlight" --scf "$highlight" | xargs swaymsg exec
+set $menu bemenu-run -b --nf '#F8F8F2' --nb '#282A36' --sb '#282A36' --sf '#282A36' --fn 'monospace-10' -p 'bemenu - '
 
 # Display keys
 font pango:monospace 8
@@ -243,3 +243,13 @@ exec_always {
 
 # Some transparencies
 for_window [class="Spotify"] opacity 0.9
+
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
+
