@@ -1,0 +1,19 @@
+1598474852619	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=schedule)
+1598474993581	Sync.Service	DEBUG	User-Agent: Firefox/80.0 (Linux x86_64) FxSync/1.82.0.20200824164321.desktop
+1598474993582	Sync.Service	INFO	Starting sync at 2020-08-26 17:49:53 in browser session iMOxh78yzHmN
+1598474993582	Sync.SyncScheduler	DEBUG	Clearing sync triggers and the global score.
+1598474993587	Sync.Status	INFO	Resetting Status.
+1598474993587	Sync.Status	DEBUG	Status.service: success.status_ok => success.status_ok
+1598474993589	FirefoxAccounts	DEBUG	FxAccountsProfileClient: Requested profile
+1598474993589	FirefoxAccounts	DEBUG	getOAuthToken enter
+1598474993591	FirefoxAccounts	TRACE	getCachedToken returning cached token
+1598474993591	FirefoxAccounts	DEBUG	getOAuthToken returning a cached token
+1598474993592	Services.Common.RESTRequest	DEBUG	GET request to https://profile.accounts.firefox.com/v1/profile
+1598474993759	Services.Common.RESTRequest	DEBUG	GET https://profile.accounts.firefox.com/v1/profile failed: 2147500036 - NS_ERROR_ABORT
+1598474993759	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1598474993760	Sync.Resource	WARN	GET request to https://sync-1-us-west1-g.sync.services.mozilla.com/1.5/164268211/info/collections failed: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1598474993760	Sync.Status	DEBUG	Status.sync: success.sync => error.login.reason.network
+1598474993760	Sync.Status	DEBUG	Status.service: success.status_ok => error.sync.failed
+1598474993760	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available
+1598474993760	Sync.SyncScheduler	DEBUG	Next sync in 600000 ms. (why=reschedule)
+1598474993762	Sync.Service	DEBUG	Exception calling anonymous function: [Exception... "The connection was established, but no data was ever received"  nsresult: "0x804b0014 (NS_ERROR_NET_RESET)"  location: "<unknown>"  data: no] No traceback available

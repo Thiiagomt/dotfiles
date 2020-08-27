@@ -176,16 +176,26 @@
 					"file": "/home/thiago/.config/sway/config",
 					"settings":
 					{
-						"buffer_size": 8989,
+						"buffer_size": 9065,
 						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				},
 				{
-					"file": "/home/thiago/Downloads/dotfiles/.config/sway/config",
+					"file": "/home/thiago/.config/waybar/config",
 					"settings":
 					{
-						"buffer_size": 8659,
+						"buffer_size": 3659,
+						"encoding": "UTF-8",
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/thiago/.config/waybar/modules/mediaplayer.py",
+					"settings":
+					{
+						"buffer_size": 3800,
+						"encoding": "UTF-8",
 						"line_ending": "Unix"
 					}
 				}
@@ -222,6 +232,14 @@
 			},
 			"file_history":
 			[
+				"/home/thiago/.config/lock/lock",
+				"/home/thiago/.config/swaylock/lock",
+				"/home/thiago/.local/bin/my-wscreensaver",
+				"/home/thiago/.local/bin/betterlockscreen",
+				"/home/thiago/.local/bin/m",
+				"/home/thiago/Downloads/dotfiles/.local/bin/my-wscreensaver",
+				"/home/thiago/.config/sway/config",
+				"/home/thiago/Downloads/dotfiles/.config/sway/config",
 				"/home/thiago/Downloads/i3-master/.config/i3/config",
 				"/home/thiago/Downloads/dotfiles/Videos/my-wscreensaver.playlist.txt",
 				"/home/thiago/Videos/my-wscreensaver.playlist.txt",
@@ -237,7 +255,6 @@
 				"/home/thiago/.config/fish/functions/bobthefish_colors.fish",
 				"/etc/ntp.conf",
 				"/home/thiago/.config/fish/functions/fish_promptt",
-				"/home/thiago/.config/sway/config",
 				"/home/thiago/.config/waybar/modules/storage.sh",
 				"/home/thiago/.config/waybar/mediaplayer.py",
 				"/home/thiago/.config/waybar/mediaplayer.sh",
@@ -245,8 +262,7 @@
 				"/home/thiago/.config/waybar/modules/spotify.sh",
 				"/home/thiago/.config/waybar/modules/mail.py",
 				"/home/thiago/.config/waybar/config.bkp",
-				"/home/thiago/.config/waybar/style.css.bkp",
-				"/home/thiago/Downloads/dotfiles/.config/sway/config"
+				"/home/thiago/.config/waybar/style.css.bkp"
 			],
 			"find":
 			{
@@ -264,6 +280,17 @@
 				"case_sensitive": false,
 				"find_history":
 				[
+					"~/.Xresources",
+					"i3lock",
+					"swaylock",
+					"i3lock",
+					"$lock",
+					".",
+					"$lock",
+					"Spe",
+					"$mod+Shift+r",
+					"$mod+Shift+e",
+					"$mod+Shift+r",
 					"idle",
 					"lock",
 					"statusline",
@@ -295,45 +322,15 @@
 							"semi_transient": false,
 							"settings":
 							{
-								"buffer_size": 8989,
+								"buffer_size": 9065,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										257,
-										257
-									]
-								],
-								"settings":
-								{
-									"syntax": "Packages/Text/Plain text.tmLanguage",
-									"tab_size": 4,
-									"translate_tabs_to_spaces": true
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"stack_index": 1,
-							"type": "text"
-						},
-						{
-							"buffer": 1,
-							"file": "/home/thiago/Downloads/dotfiles/.config/sway/config",
-							"semi_transient": false,
-							"settings":
-							{
-								"buffer_size": 8659,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										370,
-										370
+										526,
+										526
 									]
 								],
 								"settings":
@@ -344,7 +341,65 @@
 								"translation.y": 0.0,
 								"zoom_level": 1.0
 							},
+							"stack_index": 1,
+							"type": "text"
+						},
+						{
+							"buffer": 1,
+							"file": "/home/thiago/.config/waybar/config",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3659,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										3024,
+										3024
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Text/Plain text.tmLanguage",
+									"tab_size": 4,
+									"translate_tabs_to_spaces": true
+								},
+								"translation.x": 0.0,
+								"translation.y": 984.0,
+								"zoom_level": 1.0
+							},
 							"stack_index": 0,
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/thiago/.config/waybar/modules/mediaplayer.py",
+							"semi_transient": false,
+							"settings":
+							{
+								"buffer_size": 3800,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										0,
+										0
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Python/Python.sublime-syntax"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"stack_index": 2,
 							"type": "text"
 						}
 					]

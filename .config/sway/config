@@ -1,7 +1,6 @@
 # Laptop keyboard
-input "2:14:ETPS/2_Elantech_Touchpad" {
+input "2362:4918:UNIW0001:00_093A:1336_Touchpad" {
 	tap enabled
-	natural_scroll enabled
 }
 input "1:1:AT_Translated_Set_2_keyboard" {
 	xkb_layout br
@@ -13,8 +12,8 @@ output eDP-1 res 1920x1080
 set $center eDP-1
 
 # start locked
-set $lock /home/thiago/.local/bin/my-wscreensaver
-exec $lock
+set $lock ~/.local/bin/betterlockscreen -l blur
+exec $lock & reload
 
 # lock after 30 min idle
 #exec swayidle \
@@ -24,6 +23,9 @@ exec $lock
 # Mouse follows and follows mouse
 focus_follows_mouse yes
 mouse_warping container
+
+# Auto hide mouse cursor (milliseconds)
+seat * hide_cursor 8000
 
 # Minimum Settings
 set $mod Mod4
@@ -61,6 +63,9 @@ workspace C10 output $bottom
 # Specific keybinds
 bindsym $mod+b exec firefox
 bindsym $mod+s exec spotify
+bindsym $mod+t exec nautilus
+bindsym $mod+period exec $lock
+
 
 # Pretty much i3 keybinds with small adjusted
 bindsym $mod+Return exec alacritty
