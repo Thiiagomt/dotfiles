@@ -1,2 +1,0 @@
-http:www.edivaldobrito.com.br:80:.:	0	18498	http:www.edivaldobrito.com.br:80:www.edivaldobrito.com.br:443::n:1598310776:h2:y:1598310448:n::https://www.edivaldobrito.com.br|n:n:
-http:www.whdecks.com.br:80:.:	0	18498	http:www.whdecks.com.br:80:www.whdecks.com.br:443::n:1598310914:h2:y:1598310448:n::http://www.whdecks.com.br|n:n:
