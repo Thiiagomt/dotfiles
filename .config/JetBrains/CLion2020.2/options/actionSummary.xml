@@ -1,0 +1,96 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="CMake.LoadCMakeProject">
+        <ActionSummary times="1" last="1598668947005" />
+      </entry>
+      <entry key="CPP.NewCMakeListsFile">
+        <ActionSummary times="1" last="1598668937843" />
+      </entry>
+      <entry key="CPP.NewCppFile">
+        <ActionSummary times="1" last="1598667971065" />
+      </entry>
+      <entry key="CPP.NewHeaderFile">
+        <ActionSummary times="1" last="1598667906491" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="78" last="1598668491242" />
+      </entry>
+      <entry key="EditorChooseLookupItem">
+        <ActionSummary times="6" last="1598668446313" />
+      </entry>
+      <entry key="EditorDown">
+        <ActionSummary times="6" last="1598668490510" />
+      </entry>
+      <entry key="EditorEnter">
+        <ActionSummary times="10" last="1598668447536" />
+      </entry>
+      <entry key="EditorLeft">
+        <ActionSummary times="3" last="1598668474867" />
+      </entry>
+      <entry key="EditorNextWord">
+        <ActionSummary times="6" last="1598668279833" />
+      </entry>
+      <entry key="EditorRight">
+        <ActionSummary times="18" last="1598668490829" />
+      </entry>
+      <entry key="EditorSelectWord">
+        <ActionSummary times="1" last="1598667862139" />
+      </entry>
+      <entry key="EditorTab">
+        <ActionSummary times="3" last="1598668455108" />
+      </entry>
+      <entry key="EditorUp">
+        <ActionSummary times="7" last="1598668492003" />
+      </entry>
+      <entry key="Find">
+        <ActionSummary times="3" last="1598668127424" />
+      </entry>
+      <entry key="Github.Accounts.AddGHAccount">
+        <ActionSummary times="2" last="1598667634139" />
+      </entry>
+      <entry key="HideActiveWindow">
+        <ActionSummary times="2" last="1598668951355" />
+      </entry>
+      <entry key="Run">
+        <ActionSummary times="2" last="1598666714831" />
+      </entry>
+      <entry key="ShowSettings">
+        <ActionSummary times="6" last="1598668375197" />
+      </entry>
+      <entry key="Vcs.VcsClone">
+        <ActionSummary times="2" last="1598667788322" />
+      </entry>
+      <entry key="WelcomeScreen.OpenProject">
+        <ActionSummary times="1" last="1598667785693" />
+      </entry>
+      <entry key="com.intellij.codeInsight.daemon.NavigateAction">
+        <ActionSummary times="1" last="1598667880192" />
+      </entry>
+      <entry key="com.intellij.find.editorHeaderActions.NextOccurrenceAction">
+        <ActionSummary times="4" last="1598668134725" />
+      </entry>
+      <entry key="com.intellij.find.editorHeaderActions.PrevOccurrenceAction">
+        <ActionSummary times="4" last="1598668135875" />
+      </entry>
+      <entry key="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+        <ActionSummary times="7" last="1598668494323" />
+      </entry>
+      <entry key="com.intellij.openapi.ui.DialogWrapper$5">
+        <ActionSummary times="3" last="1598669045703" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+        <ActionSummary times="2" last="1598666717121" />
+      </entry>
+      <entry key="com.intellij.openapi.wm.impl.welcomeScreen.FlatWelcomeFrame$FlatWelcomeScreen$6">
+        <ActionSummary times="1" last="1598666196276" />
+      </entry>
+      <entry key="com.intellij.ui.CommonActionsPanel$AddButton">
+        <ActionSummary times="4" last="1598668229126" />
+      </entry>
+      <entry key="editRunConfigurations">
+        <ActionSummary times="1" last="1598668226192" />
+      </entry>
+    </data>
+  </component>
+</application>

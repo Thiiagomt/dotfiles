@@ -1,0 +1,5 @@
+2020/08/28-12:09:37.825 2798 Reusing MANIFEST /home/thiago/.config/google-chrome/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/28-12:12:50.117 1e55 Level-0 table #5: started
+2020/08/28-12:12:50.136 1e55 Level-0 table #5: 584733 bytes OK
+2020/08/28-12:12:50.138 1e55 Delete type=0 #3
+2020/08/28-12:12:50.138 1e55 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

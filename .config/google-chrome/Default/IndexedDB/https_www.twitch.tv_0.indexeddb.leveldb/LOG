@@ -1,0 +1,15 @@
+2020/08/28-17:13:48.791 4ca9 Reusing MANIFEST /home/thiago/.config/google-chrome/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/28-17:13:48.791 4ca9 Recovering log #27
+2020/08/28-17:13:48.791 4ca9 Reusing old log /home/thiago/.config/google-chrome/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/000027.log 
+2020/08/28-17:13:53.882 940 Level-0 table #32: started
+2020/08/28-17:13:53.885 940 Level-0 table #32: 464 bytes OK
+2020/08/28-17:13:53.887 940 Delete type=0 #27
+2020/08/28-17:13:53.887 940 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2020/08/28-17:13:53.887 940 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0f\x00c\x00u\x00r\x00r\x00e\x00n\x00t\x00_\x00u\x00s\x00e\x00r\x00_\x00i\x00d' @ 146 : 1
+2020/08/28-17:13:53.887 940 Compacting 1@1 + 1@2 files
+2020/08/28-17:13:53.889 940 Generated table #33@1: 20 keys, 575 bytes
+2020/08/28-17:13:53.889 940 Compacted 1@1 + 1@2 files => 575 bytes
+2020/08/28-17:13:53.891 940 compacted to: files[ 0 0 1 0 0 0 0 ]
+2020/08/28-17:13:53.891 940 Delete type=2 #29
+2020/08/28-17:13:53.891 940 Delete type=2 #32
+2020/08/28-17:13:53.891 940 Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x0f\x00c\x00u\x00r\x00r\x00e\x00n\x00t\x00_\x00u\x00s\x00e\x00r\x00_\x00i\x00d' @ 146 : 1 .. (end); will stop at (end)

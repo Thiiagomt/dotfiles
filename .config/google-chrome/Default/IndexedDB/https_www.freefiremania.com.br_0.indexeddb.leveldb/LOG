@@ -1,0 +1,5 @@
+2020/08/28-12:11:57.037 1f14 Reusing MANIFEST /home/thiago/.config/google-chrome/Default/IndexedDB/https_www.freefiremania.com.br_0.indexeddb.leveldb/MANIFEST-000001
+2020/08/28-12:12:07.307 1e55 Level-0 table #5: started
+2020/08/28-12:12:07.310 1e55 Level-0 table #5: 5877 bytes OK
+2020/08/28-12:12:07.313 1e55 Delete type=0 #3
+2020/08/28-12:12:07.313 1e55 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

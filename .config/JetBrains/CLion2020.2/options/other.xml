@@ -1,0 +1,26 @@
+<application>
+  <component name="CppNewDialogSettings">
+    <option name="addNewFilesToProject" value="false" />
+  </component>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/bin/node" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ExpandRunDashboardTypesPanel" value="false" />
+    <property name="InstalledPluginsSearchHistory" value="Make&#10;Mak&#10;Ma&#10;M&#10;github" />
+    <property name="MarketplacePluginsSearchHistory" value="Makefile&#10;Make" />
+    <property name="NonModalCommitCustomization.IsApplied" value="true" />
+    <property name="SettingsSearchHistory" value="Makefile&#10;git" />
+    <property name="UITheme.relaunch" value="true" />
+    <property name="appcds.runOnSecondStart" value="CL-202.6948.80-7e201e1ecd119ca8e702e94e665f0fbe1bf51703b0abaf30efceaef09a41b766" />
+    <property name="ask.about.ctrl.y.shortcut.v2" value="true" />
+    <property name="evlsprt3.202" value="16" />
+    <property name="file.gist.reindex.count" value="6" />
+    <property name="fileTypeChangedCounter" value="1" />
+    <property name="lastSeenTip" value="neue-RunConfigFolders.html" />
+    <property name="lastTimeTipsWereShown" value="1598666706145" />
+    <property name="seenTips" value="neue-RunConfigFolders.html" />
+    <property name="tasks.pass.word.conversion.enforced" value="true" />
+    <property name="ts.lib.d.ts.version" value="3.9.5" />
+  </component>
+</application>
