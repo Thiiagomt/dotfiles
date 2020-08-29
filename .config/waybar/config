@@ -6,10 +6,10 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],
     "modules-center": ["sway/window"],
-    "modules-right": ["tray","pulseaudio", "network", "custom/storage", "cpu", "memory", "temperature", "battery", "battery#bat2", "clock"],
+    "modules-right": ["pulseaudio", "network", "custom/storage", "cpu", "memory", "temperature", "battery", "battery#bat2", "clock"],
     // Modules configuration
      "sway/workspaces": {
-         "disable-scroll": true,
+         "disable-scroll": false,
          "disable-markup" : false,
          "all-outputs": true,
          "format": "  {icon}  ",
@@ -35,10 +35,6 @@
             "deactivated": ""
         }
     },
-    "tray": {
-        "icon-size": 21,
-        "spacing": 10
-    },
     "custom/storage": {
         "format": "{} ",
         "format-alt": "{percentage}% ",
@@ -46,23 +42,28 @@
         "return-type": "json",
         "interval": 60,
         "exec": "~/.config/waybar/modules/storage.sh"
+        // "on-click": "exec nautilus"
     },
     "clock": {
-        "tooltip-format": "{:%Y-%m-%d | %H:%M}",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%H:%M - %d of %b, %Y}",
+        "tooltip-format": "{:%T | %d-%m-%Y}",
+        "interval": 1
     },
     "cpu": {
-        "format": "{usage}% "
+        "format": "{usage}% ",
+        "interval": 2
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% ",
+        "interval": 2
     },
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
         // "format-critical": "{temperatureC}°C ",
-        "format": "{temperatureC}°C "
+        "format": "{temperatureC}°C ",
+        "interval": 2
     },
     "battery": {
         "states": {

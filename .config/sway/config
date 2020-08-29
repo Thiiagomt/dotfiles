@@ -1,10 +1,11 @@
 # Laptop keyboard
 input "2362:4918:UNIW0001:00_093A:1336_Touchpad" {
-	tap enabled
+	tap enable
 }
 input "1:1:AT_Translated_Set_2_keyboard" {
 	xkb_layout br
 	xkb_variant abnt2
+	xkb_numlock enable
 }
 
 # Default displays
@@ -22,7 +23,12 @@ exec $lock & reload
 
 # Mouse follows and follows mouse
 focus_follows_mouse yes
-mouse_warping container
+mouse_warping none
+
+# Mouse acelleration and dpi settings 
+input 5426:92:Razer_Razer_DeathAdder_Elite {
+    pointer_accel -0.7
+}
 
 # Auto hide mouse cursor (milliseconds)
 seat * hide_cursor 8000
@@ -30,7 +36,7 @@ seat * hide_cursor 8000
 # Minimum Settings
 set $mod Mod4
 set $editor subl
-set $menu bemenu-run -b --nf '#F8F8F2' --nb '#282A36' --sb '#282A36' --sf '#282A36' --fn 'monospace-10' -p 'bemenu - '
+set $menu bemenu-run -b --nf '#F8F8F2' --nb '#282A36' --sb '#282A36' --sf '#282A36' --fn 'monospace-10' -p '↪'
 
 # Display keys
 font pango:monospace 8
@@ -61,7 +67,7 @@ workspace C9 output $bottom
 workspace C10 output $bottom
 
 # Specific keybinds
-bindsym $mod+b exec firefox
+bindsym $mod+b exec google-chrome-stable
 bindsym $mod+s exec spotify
 bindsym $mod+t exec nautilus
 bindsym $mod+period exec $lock

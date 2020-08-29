@@ -1,8 +1,0 @@
-station wlan0 scan
-station wlan0 get-networks 
-station wlan0 connect 'Feliz Natal'
-station wlan0 show 
-exit
-ip link
-ip a
-exit
