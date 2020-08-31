@@ -1,5 +1,0 @@
-2020/08/28-12:53:37.585 4a4e Reusing MANIFEST /home/thiago/.config/google-chrome/Default/IndexedDB/https_www.includehelp.com_0.indexeddb.leveldb/MANIFEST-000001
-2020/08/28-12:54:02.800 3ded Level-0 table #5: started
-2020/08/28-12:54:02.803 3ded Level-0 table #5: 5677 bytes OK
-2020/08/28-12:54:02.807 3ded Delete type=0 #3
-2020/08/28-12:54:02.807 3ded Manual compaction at level-0 from (begin) .. (end); will stop at (end)
