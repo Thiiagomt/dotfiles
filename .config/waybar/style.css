@@ -20,7 +20,7 @@ colors {
 */
 
 window#waybar {
-    background-color: #282A36;
+    background-color: rgba(40, 42, 54, 0.3);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #ffffff;
 }
@@ -37,7 +37,7 @@ window#waybar.hidden {
 }
 
 #workspaces button.focused {
-    background: #44475A;
+    background: rgba(68, 71, 90, 0.5);
     border-bottom: 3px solid #ffffff;
 }
 
