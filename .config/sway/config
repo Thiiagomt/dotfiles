@@ -13,8 +13,24 @@ output eDP-1 res 1920x1080
 set $center eDP-1
 
 # start locked
-set $lock ~/.local/bin/betterlockscreen -l blur
-exec $lock & reload
+set $lock swaylock \
+    --screenshots \
+    --clock \
+    --indicator-caps-lock \
+    --font Lato \
+    --datestr "%a, %d/%m/%Y" \
+    --indicator \
+    --indicator-radius 100 \
+    --indicator-thickness 7 \
+    --effect-blur 7x5 \
+    --effect-vignette 0.5:0.5 \
+    --text-color C0C0C0 \
+    --ring-color 9b59b6 \
+    --key-hl-color 880033 \
+    --inside-color 00000050 \
+    --grace 1 \
+    --fade-in 0.5
+exec $lock
 
 # lock after 30 min idle
 #exec swayidle \
