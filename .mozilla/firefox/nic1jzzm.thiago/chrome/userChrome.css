@@ -26,3 +26,17 @@
 /* @import "css/chrome-like.css"; */
 
 @import "css/one-line.css";
+
+/* TOOLBAR BELOW PAGE */
+#main-window:not([sizemode="fullscreen"]) body > box:nth-child(8)
+{ position: fixed
+; bottom: 0
+; display: block
+; z-index: 1
+; background: gray
+; width: 100%
+; background-color: black;
+; background-image: var(--lwt-header-image) !important
+; background-repeat: no-repeat
+; background-position: right top !important
+}
