@@ -36,14 +36,13 @@
         }
     },
     "custom/storage": {
-        "format": "{} ",
-        "format-alt": "{percentage}% ",
-        "format-alt-click": "click-right",
-        "return-type": "json",
         "interval": 60,
-        "exec": "~/.config/waybar/modules/storage.sh"
-        // "on-click": "exec nautilus"
-    },
+        "return-type": "json",
+        "exec": "~/.config/waybar/modules/storage.sh",
+        "format": "{percentage}% ({} GiB)  {icon}",
+        "format-icons": [""],
+        "escape": true
+    },    
     "clock": {
         "format": "{:%H:%M - %d of %b, %Y}",
         "tooltip-format": "{:%T | %d-%m-%Y}",

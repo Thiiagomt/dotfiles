@@ -1,9 +1,0 @@
-/*
-  Modified code from
-  https://github.com/Timvde/UserChrome-Tweaks/blob/master/navbar/move-identity-lock-right.css
-*/
-
-#urlbar-input-container > #identity-box,
-#urlbar-input-container > #tracking-protection-icon-container {
-  -moz-box-ordinal-group: 99 !important; /* Move identity box to the end */
-}

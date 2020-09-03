@@ -12,9 +12,13 @@ input "1:1:AT_Translated_Set_2_keyboard" {
 output eDP-1 res 1920x1080 
 set $center eDP-1
 
+# Wallpaper
+output '*' background /home/thiago/.wallpaper.png fill
+
 # start locked
 set $lock swaylock \
     --screenshots \
+    --ignore-empty-password \
     --clock \
     --indicator-caps-lock \
     --font Lato \
@@ -24,11 +28,10 @@ set $lock swaylock \
     --indicator-thickness 7 \
     --effect-blur 7x5 \
     --effect-vignette 0.5:0.5 \
-    --text-color C0C0C0 \
-    --ring-color 9b59b6 \
+    --text-color f1c40f \
+    --ring-color c0c0c0 \
     --key-hl-color 880033 \
     --inside-color 00000050 \
-    --grace 1 \
     --fade-in 0.5
 exec $lock
 
@@ -36,6 +39,12 @@ exec $lock
 #exec swayidle \
 #	timeout 30 '$scrsv' \
 #	before-sleep '$lock'
+
+#exec swayidle \
+#    timeout 30 '$lock' \
+#    timeout 90 'swaymsg "output * dpms off"' \
+#        resume 'swaymsg "output * dpms on"' \
+#    before-sleep '$lock'
 
 # Mouse follows and follows mouse
 focus_follows_mouse yes
@@ -83,7 +92,7 @@ workspace C9 output $bottom
 workspace C10 output $bottom
 
 # Specific keybinds
-bindsym $mod+b exec google-chrome-stable
+bindsym $mod+b exec firefox
 bindsym $mod+s exec spotify
 bindsym $mod+t exec nautilus
 bindsym $mod+period exec $lock
@@ -253,18 +262,13 @@ bindsym $mod+Tab mode "$mode_favs"
 # Screen sharing
 #exec xdg-desktop-portal-wlr -p BGRx
 
-# Wallpaper
-output '*' background /home/thiago/.wallpaper.png fill
-#output 'HDMI-A-1' background /home/pedrohlc/.wallpaper.HDMI-A-1.jpg fill
-#output 'DP-1' background /home/pedrohlc/.wallpaper.DP-1.jpg fill
-#output 'eDP-1' background /home/pedrohlc/.wallpaper.eDP-1.jpg fill
 
 # GNOME Theme
-set $gnome-schema org.gnome.desktop.interface
+set $gnome-schema #org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Breeze-Dark'
     gsettings set $gnome-schema icon-theme 'Vimix-Doder-dark'
-    gsettings set $gnome-schema cursor-theme 'Breeze_Snow'
+    gsettings set $gnome-schema cursor-theme 'ComixCursors-White'
 }
 
 # Some transparencies

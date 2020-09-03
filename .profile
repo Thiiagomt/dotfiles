@@ -6,9 +6,6 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_DATA_DIRS="$HOME/.local/share/:/usr/local/share/:/usr/share/"
 export BROWSER=firefox
 
-# Native display
-export MOZ_ENABLE_WAYLAND=1
-
 # Bug fixing
 export _JAVA_AWT_WM_NONREPARENTING=1
 
