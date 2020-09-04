@@ -92,7 +92,7 @@ workspace C9 output $bottom
 workspace C10 output $bottom
 
 # Specific keybinds
-bindsym $mod+b exec firefox
+bindsym $mod+b exec firefox-developer-edition
 bindsym $mod+s exec spotify
 bindsym $mod+t exec nautilus
 bindsym $mod+period exec $lock
