@@ -52,7 +52,7 @@ mouse_warping none
 
 # Mouse acelleration and dpi settings 
 input 5426:92:Razer_Razer_DeathAdder_Elite {
-    pointer_accel -0.7
+    pointer_accel -0.8
 }
 
 # Auto hide mouse cursor (milliseconds)
