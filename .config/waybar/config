@@ -79,7 +79,6 @@
         "bat": "BAT2"
     },
     "network": {
-        "interface": "wlan0", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",
         "format-disconnected": "Disconnected ⚠",
