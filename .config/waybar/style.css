@@ -45,14 +45,14 @@ window#waybar.hidden {
     background-color: #FF5555;
 }
 
-#mode {
-    background: #64727D;
-    border-bottom: 3px solid #ffffff;
-}
-
-#clock, #battery, #cpu, #memory, #temperature, #custom-storage, #network, #pulseaudio, #custom-media, #custom-weather{
+#clock, #battery, #cpu, #memory, #temperature, #custom-storage, #network, #pulseaudio, #custom-media, #mode, #custom-weather{
     padding: 0 10px;
     margin: 0 5px;
+}
+
+#mode {
+    background: #414A52;
+    border-bottom: 3px solid #ffffff;
 }
 
 #clock {
