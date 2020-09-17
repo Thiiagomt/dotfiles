@@ -99,7 +99,7 @@ workspace C9 output $bottom
 workspace C10 output $bottom
 
 # Specific keybinds
-bindsym $mod+b exec firefox-developer-edition
+bindsym $mod+b exec firefox --alow-downgrade
 bindsym $mod+s exec spotify
 bindsym $mod+t exec nautilus
 bindsym $mod+period exec $lock
@@ -275,7 +275,8 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Breeze-Dark'
     gsettings set $gnome-schema icon-theme 'Vimix-Doder-dark'
-    gsettings set $gnome-schema cursor-theme 'ComixCursors-White'
+    //gsettings set $gnome-schema cursor-theme 'ComixCursors-White'
+    gsettings set $gnome-schema cursor-theme 'Breeze_Snow'
 }
 
 # Some transparencies
