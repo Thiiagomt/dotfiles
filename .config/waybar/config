@@ -18,7 +18,7 @@
              //"1": "",
              //"2": "",             
              //"3": "",
-             //"4": "",
+             "8": "",
              //"5": "",
 	     	 "10": "",
              //"focused": "",
@@ -88,7 +88,6 @@
         "format-disconnected": "Disconnected ⚠"
     },
     "pulseaudio": {
-        //"scroll-step": 1,
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% ",
         "format-muted": "",
@@ -107,7 +106,7 @@
     "custom/media": {
         "format": "{icon} {}",
         "return-type": "json",
-        //"max-length": 40,
+        "max-length": 35,
         "format-icons": {
             "spotify": "",
             "default": "🎜"
