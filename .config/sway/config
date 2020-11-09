@@ -16,11 +16,15 @@ input "9610:22:BY_Tech_Usb_Gaming_Keyboard" {
 }
 
 # Default displays
-output eDP-1 res 1920x1080 
-set $center eDP-1
+output eDP-1 pos 0 0 res 1920x1080 
+output HDMI-A-1 pos 1920 0 res 2560x1080
+set $left eDP-1
+set $right HDMI-A-1
+
 
 # Wallpaper
-output '*' background /home/thiago/.wallpaper.png fill
+output eDP-1 background /home/thiago/.wallpaper.png fill
+output HDMI-A-1 background /home/thiago/.wallpaper2.png fill
 
 # start locked
 set $lock swaylock \
@@ -83,10 +87,10 @@ workspace 3 output $left
 workspace 4 output $right
 workspace 5 output $left
 workspace 6 output $right
-workspace 7 output $bottom
-workspace 8 output $bottom
-workspace 9 output $bottom
-workspace 10 output $bottom
+workspace 7 output $left
+workspace 8 output $right
+workspace 9 output $right
+workspace 10 output $right
 workspace C1 output $left
 workspace C2 output $right
 workspace C3 output $left
@@ -99,7 +103,7 @@ workspace C9 output $bottom
 workspace C10 output $bottom
 
 # Specific keybinds
-bindsym $mod+b exec firefox --alow-downgrade
+bindsym $mod+b exec firefox-nightly
 bindsym $mod+s exec spotify
 bindsym $mod+t exec nautilus
 bindsym $mod+period exec $lock
@@ -180,19 +184,19 @@ bindsym $mod+Shift+r reload
 bindsym $mod+Shift+t sticky toggle
 
 mode "resize" {
-    bindsym h resize shrink width 10 px or 10 ppt
-    bindsym j resize grow height 10 px or 10 ppt
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym h resize shrink width 10 px 
+    bindsym j resize grow height 10 px 
+    bindsym Left resize shrink width 10 px 
+    bindsym Down resize grow height 10 px 
+    bindsym Up resize shrink height 10 px 
+    bindsym Right resize grow width 10 px 
     
 	bindsym Return mode "default"
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
 
-# Lower bar
+# Tasks bar
 bar {
 	swaybar_command waybar
 }
@@ -208,22 +212,23 @@ bindsym $mod+XF86MonBrightnessDown output * dpms off
 bindsym XF86WLAN exec $TERMINAL nmtui; mode "default"
 bindsym Print exec grim -t png - | tee /tmp/screenshot.png | wl-copy
 bindsym Shift+Print exec grim -t png -g "$(slurp)" - | tee /tmp/screenshot.png | wl-copy
-#bindsym Print exec grim -t png -o eDP-1 - | tee /tmp/screenshot.png | wl-copy
+bindsym $mod+Print exec grim -t png -o $left - | tee /tmp/screenshot.png | wl-copy
+bindsym Alt+Print exec grim -t png -o $right - | tee /tmp/screenshot.png | wl-copy
 
 # window settings
 default_border pixel 1
 hide_edge_borders both
 
 # Per app window settings
-for_window [app_id="firefox" title="moz-extension:.*"] floating enable
-for_window [app_id="firefox" title="Password Required"] floating enable
-for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; sticky enable
-for_window [app_id="firefox" title="Firefox - Sharing Indicator"] floating enable; sticky enable
+#for_window [app_id="firefox" title="moz-extension:.*"] floating enable
+#for_window [app_id="firefox" title="Password Required"] floating enable
+#for_window [app_id="firefox" title="Picture-in-Picture"] floating enable; sticky enable
+#for_window [app_id="firefox" title="Firefox - Sharing Indicator"] floating enable; sticky enable
 
-for_window [title="WScreenSaver@Global"] fullscreen enable global; sticky enable
-for_window [title="WScreenSaver@eDP-1"] move container to output "eDP-1"; fullscreen enable; sticky enable
-for_window [title="WScreenSaver@HDMI-A-1"] move container to output "HDMI-A-1"; fullscreen enable; sticky enable
-for_window [title="WScreenSaver@DP-1"] move container to output "DP-1"; fullscreen enable; sticky enable
+#for_window [title="WScreenSaver@Global"] fullscreen enable global; sticky enable
+#for_window [title="WScreenSaver@eDP-1"] move container to output "eDP-1"; fullscreen enable; sticky enable
+#for_window [title="WScreenSaver@HDMI-A-1"] move container to output "HDMI-A-1"; fullscreen enable; sticky enable
+#for_window [title="WScreenSaver@DP-1"] move container to output "DP-1"; fullscreen enable; sticky enable
 
 # Proper options for poweroff
 set $mode_power [L]ogoff | [S]hutdown | [R]eboot | [l]ock | [s]uspend 
@@ -275,8 +280,7 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Breeze-Dark'
     gsettings set $gnome-schema icon-theme 'Vimix-Doder-dark'
-    //gsettings set $gnome-schema cursor-theme 'ComixCursors-White'
-    gsettings set $gnome-schema cursor-theme 'Breeze_Snow'
+    gsettings set $gnome-schema cursor-theme 'ComixCursors-White'
 }
 
 # Some transparencies

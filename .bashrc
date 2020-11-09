@@ -2,8 +2,6 @@
 # ~/.bashrc
 #
 
-unset HISTFILE
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
