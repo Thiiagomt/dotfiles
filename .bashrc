@@ -6,4 +6,8 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+
+export BROWSER=firefox-developer-edition
+export TERMINAL=alacritty
+
 PS1='[\u@\h \W]\$ '
